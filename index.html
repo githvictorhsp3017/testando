@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <script>
+
+        //Captura o valor inserido no input do prompt e mostra no console
+        /*let nome = window.prompt("Qual o seu nome?")
+        window.alert(`Seja muito bem vindo ${nome}`)*/
+
+        //Number.parseInt converte o valor para inteiro se númerico
+        /*let n1 = window.prompt("Digite um número")
+        let n2 = window.prompt("Digite outro número:")
+
+        let soma = Number.parseInt(n1) + Number.parseInt(n2)
+
+        window.alert(`A soma entre os dois números informados é, ${soma}`)*/
+
+        //Number() o JS se vira para identificar o valor informado
+        var n1 = window.prompt("Digite um número")
+        var n2 = window.prompt("Digite outro número:")
+
+        if(n1.includes(",") === true){
+            n1 = n1.replace(',','.') //Substitui o valor informado pelo usuário para o formato padrão de utilização
+            n2 = n2.replace(',','.')
+            let soma = Number(n1) + Number(n2)
+            window.alert(`A soma entre os dois números informados é, ${soma}`)
+        }else{
+            let soma = Number(n1) + Number(n2)
+            window.alert(`A soma entre os dois números informados é, ${soma}`)
+        }
+
+
+    </script>
+</body>
+</html>

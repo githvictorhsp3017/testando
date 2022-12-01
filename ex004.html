@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex004 - Somando números</title>
+</head>
+<body>
+    <h1>SOMANDO VALORES</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" id="sun">
+    <script>
+        let sum = document.getElementById("sun")
+
+        sum.addEventListener('click', sun)
+        
+        function sun(){
+            array = [
+                {
+                    input:document.getElementById('txtn1')
+                }
+            ]
+            
+            array[0].input.style.background = 'blue'
+            
+            console.log(array[0].input)
+            if(document.getElementById('txtn1').value != '' && document.getElementById('txtn2').value != ''){
+                let sum = Number(document.getElementById('txtn1').value) + Number(document.getElementById('txtn2').value)
+                window.alert(`A soma entre os valores informados é ${sum}`)
+            }else{
+                window.alert('Verifique os campos existem campos em branco.')
+            }
+        }
+    </script>    
+</body>
+</html>

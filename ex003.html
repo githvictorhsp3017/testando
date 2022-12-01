@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <button id="btn1" onclick="click_event()" onmouseenter="enter()" onmouseout="out()">Interaja</button>
+    </div>
+    <script>
+        function click_event(){
+            let a = window.document.getElementById("btn1")
+            a.style.color = 'blue'
+        }
+
+        function enter(){
+            let a = window.document.getElementById("btn1")
+            a.style.background = 'red'
+        }
+
+        function out(){
+            let a = window.document.getElementById("btn1")
+            a.style.backgroundColor = 'aqua'
+        }
+    </script>
+</body>
+</html>
